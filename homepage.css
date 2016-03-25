@@ -1,3 +1,44 @@
+.navbar {
+	margin-bottom: 0px;
+}
+
+#frame .container-fluid {
+	padding: 15px;
+}
+
 .img-nav {
 	max-width: 30%;
+}
+
+#intro { 
+	background-color: #474e5d; /* blueish */
+	color: #ffffff;
+}
+
+#intro img {
+	height: 250px;
+	width: 250px;
+}
+
+#about {
+	background-color: #1abc9c;
+	color: #ffffff;
+}
+
+#about h1 {
+	text-align: center;
+}
+
+#projects {
+	background-color: #474e5d;
+	color: #ffffff;
+}
+
+#projects img {
+	width: 300px;
+	height: 300px;
+}
+
+#contact {
+	background-color: #ECECEA;
 }
