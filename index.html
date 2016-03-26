@@ -13,9 +13,9 @@
 	<!-- CSS and JS -->
 	<link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<!-- NAV BAR -->
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100">
 		<div class="container-fluid">
 			<div class="navbar-header">
 			<a class="navbar-brand" href="#"><img class="img-thumbnail img-responsive img-nav" src="images/pikachu.jpg" alt="personal picture"></a>
@@ -85,7 +85,12 @@
 
 		<div id="contact" class="container-fluid text-center">
 			<h1>Contact Me</h1>
-			<p>Dugtrio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Meowth Lorem ipsum dolor sit amet, consectetur adipiscing elit. Persian Lorem ipsum dolor sit amet, consectetur adipiscing elit. Psyduck Lorem ipsum dolor sit amet, consectetur adipiscing elit. Golduck Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mankey Lorem ipsum dolor sit</p>
+			<p>Send me a message</p>
+			<fieldset roll="form">
+				<textarea class="form-control" cols="30" rows="10" width="50%"></textarea>
+				<br/>
+				<button class="btn btn-default">Send</button>
+			</fieldset>
 		</div>
 	</div>
 </body>

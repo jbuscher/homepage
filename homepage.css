@@ -1,5 +1,6 @@
 .navbar {
 	margin-bottom: 0px;
+	padding: 0px;
 }
 
 #frame .container-fluid {
@@ -10,7 +11,11 @@
 	max-width: 30%;
 }
 
-#intro { 
+.navbar-brand {
+	padding: 5px;
+}
+
+#intro {
 	background-color: #474e5d; /* blueish */
 	color: #ffffff;
 }
@@ -18,6 +23,10 @@
 #intro img {
 	height: 250px;
 	width: 250px;
+}
+
+#intro h1 {
+	padding-top: 50px;
 }
 
 #about {
@@ -41,4 +50,58 @@
 
 #contact {
 	background-color: #ECECEA;
+}
+
+/*
+Form styles
+*/
+
+.form-control {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/*
+	Makes a animating navigation bar, that shrinks when scrolling down
+*/
+.affix li{
+	padding:0px;
+	font-size: 14px;
+
+	-webkit-transition:padding 0.2s linear;
+	-moz-transition:padding 0.2s linear;  
+	-o-transition:padding 0.2s linear;         
+	transition:padding 0.2s linear;  
+
+	-webkit-transition:font-size 0.1s linear;
+	-moz-transition:font-size 0.1s linear;  
+	-o-transition:font-size 0.1s linear;         
+	transition:font-size 0.1s linear;
+}
+
+.affix-top li{
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size: 20px;
+
+	-webkit-transition:padding 0.2s linear;
+	-moz-transition:padding 0.2s linear;  
+	-o-transition:padding 0.2s linear;         
+	transition:padding 0.2s linear; 
+
+	-webkit-transition:font-size 0.1s linear;
+	-moz-transition:font-size 0.1s linear;  
+	-o-transition:font-size 0.1s linear;         
+	transition:font-size 0.1s linear; 
+}
+
+.affix img {
+	width: 10%;
+}
+
+.affix-top img {
+	width: 30%;
 }
