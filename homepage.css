@@ -3,16 +3,24 @@
 	padding: 0px;
 }
 
-#frame .container-fluid {
-	padding: 15px;
+#intro, #projects, #about, #contact {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 .img-nav {
-	max-width: 30%;
+	max-width: 60%;
 }
 
 .navbar-brand {
 	padding: 5px;
+	width: 50%
+}
+
+.cleared {
+	clear: both;
 }
 
 #intro {
@@ -26,7 +34,7 @@
 }
 
 #intro h1 {
-	padding-top: 50px;
+	padding-top: 75px;
 }
 
 #about {
@@ -43,7 +51,7 @@
 	color: #ffffff;
 }
 
-#projects img {
+#projects img, .modal-body img {
 	width: 300px;
 	height: 300px;
 }
@@ -52,16 +60,31 @@
 	background-color: #ECECEA;
 }
 
+#contact > div{
+	text-align: left;
+}
+
 /*
 Form styles
 */
 
-.form-control {
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
+fieldset {
+	text-align: left;
 }
 
+/*
+Modal styles
+*/
+
+#projects img:hover {
+	opacity: .5;
+}
+
+.close-modal {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
 
 
 /*
@@ -98,10 +121,31 @@ Form styles
 	transition:font-size 0.1s linear; 
 }
 
+.affix button{
+	margin-top:10px;
+	margin-bottom:10px;
+
+	-webkit-transition:margin 0.2s linear;
+	-moz-transition:margin 0.2s linear;  
+	-o-transition:margin 0.2s linear;         
+	transition:margin 0.2s linear;  
+}
+
+.affix-top button{
+	margin-top:20px;
+	margin-bottom:20px;
+
+	-webkit-transition:margin 0.2s linear;
+	-moz-transition:margin 0.2s linear;  
+	-o-transition:margin 0.2s linear;         
+	transition:margin 0.2s linear; 
+}    
+
+
 .affix img {
-	width: 10%;
+	width: 20%;
 }
 
 .affix-top img {
-	width: 30%;
+	width: 60%;
 }
